@@ -4,7 +4,6 @@ import {ImPhone, ImVk} from "react-icons/im";
 import {IoIosMail, IoLogoWhatsapp} from "react-icons/io";
 import ChildComponent from "./ChildComponent";
 import cn from 'classnames'
-import s from './FooterTwo.module.css'
 import styles from "../Header/Header.module.css";
 import {AiFillEnvironment} from "react-icons/ai";
 

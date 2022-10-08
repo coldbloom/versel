@@ -1,8 +1,8 @@
 import Head from 'next/head'
-import Main from './../Components/Main/Main'
+import Main from './../components/Main/Main'
 
-import Header from "../Components/Header/Header";
-import FooterTwo from '../Components/Footer2/FooterTwo'
+import Header from "../components/Header/Header";
+import FooterTwo from '../components/Footer2/FooterTwo'
 
 export default function Home() {
     return (

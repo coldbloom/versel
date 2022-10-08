@@ -1,6 +1,6 @@
 import React from 'react'
-import Header from "../Components/Header/Header";
-import FooterTwo from "../Components/Footer2/FooterTwo";
+import Header from "../components/Header/Header";
+import FooterTwo from "../components/Footer2/FooterTwo";
 
 const Kontacts = () => {
     return (

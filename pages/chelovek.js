@@ -1,9 +1,9 @@
 import React from 'react'
-import Header from "../Components/Header/Header";
-import FooterTwo from "../Components/Footer2/FooterTwo";
+import Header from "../components/Header/Header";
+import FooterTwo from "../components/Footer2/FooterTwo";
 import Link from "next/link";
 import {TiArrowBack} from 'react-icons/ti'
-import Ringing from "../Components/Ringing/Ringing";
+import Ringing from "../components/Ringing/Ringing";
 
 const data_one = [
     {

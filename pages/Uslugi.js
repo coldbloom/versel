@@ -1,10 +1,10 @@
 import React from "react";
 import {TiArrowBack} from "react-icons/ti";
 import Link from "next/link";
-import Header from "../Components/Header/Header";
-import Ringing from "../Components/Ringing/Ringing";
-import RitualSlider from "../Components/Slider/RitualSlider";
-import FooterTwo from "../Components/Footer2/FooterTwo";
+import Header from "../components/Header/Header";
+import Ringing from "../components/Ringing/Ringing";
+import RitualSlider from "../components/Slider/RitualSlider";
+import FooterTwo from "../components/Footer2/FooterTwo";
 
 const Uslugi = () => {
     return(
