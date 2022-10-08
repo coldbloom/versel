@@ -43,7 +43,8 @@ const UniverseComp = ({item}) => {
             <div>
                 <div className='flex justify-center pb-5 h-max pt-5'>
                     <button
-                        className='w-10/12 rounded-md border-2 border-blue-900 px-6 py-2 font-bold text-lg text-blue-900'>Оформить
+                        className='w-10/12 rounded-md border-2 border-blue-900 px-6 py-2 font-bold text-lg text-blue-900'>
+                        Оформить
                     </button>
                 </div>
             </div>

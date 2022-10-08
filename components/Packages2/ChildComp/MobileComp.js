@@ -43,7 +43,7 @@ const MobileComp = ({item, compensation, priceNow}) => {
                 ref={content}
                 style={{maxHeight: height}}
             >
-                <UniverseComp item={item}/>`
+                <UniverseComp item={item}/>
             </div>
         </div>
     )
