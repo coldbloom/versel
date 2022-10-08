@@ -59,7 +59,7 @@ const AskAndAnswer = () => {
     ]
     return (
         <div className='pt-10 pb-10 bg-white px-4 md:px-10'>
-            <h2 className='font-bold text-3xl text-center mb-5'>Вопрс-ответ</h2>
+            <h2 className='font-bold text-3xl text-center mb-5 underline'>Вопрс-ответ</h2>
             <div className='flex flex-col w-full'>
                 {data.map((item) => (
                     <ChildComponent key={item.id} data={item}/>
