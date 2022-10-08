@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
-import AskAndAnswer from "../Components/AskAndAnswer/AskAndAnswer";
+import AskAndAnswer from "../components/AskAndAnswer/AskAndAnswer";
 
 export default function Home() {
   return (
