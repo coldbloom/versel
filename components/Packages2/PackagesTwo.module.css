@@ -1,0 +1,4 @@
+.content {
+    overflow: hidden; /*Переполняющее содержимое не отображается.*/
+    transition: max-height 0.6s ease;
+}

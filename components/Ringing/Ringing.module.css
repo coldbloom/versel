@@ -1,0 +1,33 @@
+.color {
+    background-color: #f8f9ff;;
+}
+
+.tg {
+    color: #229ED9;
+}
+
+.wats {
+    color: #25D366;
+}
+
+.vb {
+    color: #7360F2;
+}
+
+@media (max-width: 768px) {
+    .iconWidth {
+        width: 44px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .iconWidth {
+        width: 22px;
+    }
+}
+
+@media (max-width: 1280px) {
+    .iconWidth {
+        width: 44px;
+    }
+}

@@ -1,0 +1,110 @@
+.sobor5 {
+    box-sizing: content-box;
+}
+
+.sobor3 {
+    width: 100%!important;
+    height: 100%!important;
+    object-fit: cover!important;
+    object-position: 0 0!important;
+}
+
+.imgWrap {
+    width: 100%;
+    height: 200px;
+    border-style: solid;
+}
+
+.image {
+    z-index: 0;
+    background-color: rgba(0,0,0,.15)!important;
+}
+
+.image2 {
+    width: 200px;
+}
+
+.custom {
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+}
+
+.background {
+    background-image: url('./../../assets/images/sobor.jpg');
+    width: 100%;
+
+}
+
+.div {
+    margin-left: 10%;
+    width: 80%;
+    margin-top: -31px;
+}
+
+.center {
+    text-align: center;
+}
+
+.left {
+    left: 50%;
+    margin-left: 10%;
+}
+
+.block {
+    color: #000;
+    background: #FFF;
+    border: 1px solid #000;
+    width: 600px;
+    height: 400px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -300px;
+    margin-top: -200px;
+}
+
+.custom__devide {
+    border-top: 1px solid rgb(148 163 184);
+}
+
+.custom__devide2 {
+    padding: 18px 0 2px;
+    border-top: 1px solid #41474e;
+    margin: 20px 0 0;
+}
+
+.mxCustom {
+    right: 10%;
+    left: 10%;
+    background-color: #5264B3;
+}
+
+.extraLight {
+    font-weight: lighter;
+}
+
+.iconSize {
+    font-size: 65px;
+}
+
+.phoneSize {
+    font-size: 30px;
+}
+
+
+@media (max-width: 768px) {
+    .absolute__class {
+        position: absolute;
+        margin-top: -10px;
+    }
+
+    .iconSize {
+        font-size: 42px;
+    }
+
+    .phoneSize {
+        font-size: 20px;
+    }
+}
+
