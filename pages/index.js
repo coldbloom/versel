@@ -13,6 +13,7 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
+          <h1 className='text-center font-bold'>Bla Bla Bla</h1>
         <AskAndAnswer />
       </main>
 
