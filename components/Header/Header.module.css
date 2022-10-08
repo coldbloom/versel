@@ -1,0 +1,20 @@
+.borderTop {
+    border-top: 1px solid transparent;
+}
+
+.blink {
+    animation: blink 1s infinite; /* Параметры анимации */
+}
+
+.text__color {
+    color: #7FFF00;
+}
+
+.bg__color {
+    background-color: #7FFF00;
+}
+@keyframes blink {
+    from { opacity: 1; /* Непрозрачный текст */ }
+    to { opacity: 0; /* Прозрачный текст */ }
+}
+

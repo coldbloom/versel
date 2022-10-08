@@ -1,0 +1,49 @@
+.alertBlock {
+    overflow: hidden; /*Переполняющее содержимое не отображается.*/
+    transition: max-height 0.6s ease;
+}
+
+
+.alertText {
+    animation: show-loader-Y 1s forwards;
+}
+
+@keyframes  show-loader-X{
+    0% {
+        opacity: 0;
+        transform: translateX(-200px);
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+@keyframes show-loader-Y {
+    0% {
+        opacity: 0;
+        transform: translateX(-200px);
+    }
+
+    25% {
+        opacity: 0.4;
+    }
+
+    50% {
+        opacity: 0.7;
+    }
+
+    75% {
+        opacity: 0.9;
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
