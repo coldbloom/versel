@@ -1,9 +1,9 @@
 import React from 'react'
-import Header from "../../Components/Header/Header";
-import Navigation from "../../Components/Navigation/Navigation";
-import Ringing from "../../Components/Ringing/Ringing";
-import RitualSlider from "../../Components/Slider/RitualSlider";
-import FooterTwo from "../../Components/Footer2/FooterTwo";
+import Header from "../../components/Header/Header";
+import Navigation from "../../components/Navigation/Navigation";
+import Ringing from "../../components/Ringing/Ringing";
+import RitualSlider from "../../components/Slider/RitualSlider";
+import FooterTwo from "../../components/Footer2/FooterTwo";
 
 const Kremacija = () => {
     return(
