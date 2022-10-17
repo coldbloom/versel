@@ -252,7 +252,7 @@ const FooterTwo = () => {
                         <div>
                             <AiFillEnvironment size={22} color='rgb(148 163 184)'/>
                         </div>
-                        <p className='md:pl-3 text-white w-64 md:text-left text-center'>Республика Крым, г. Евпатория, проспект Победы, 42, Ярмарка, торговое место №62</p>
+                        <p className='md:pl-3 text-white w-64 md:text-left text-center'>1Республика Крым, г. Евпатория, проспект Победы, 42, Ярмарка, торговое место №62</p>
                     </div>
                     <div className='flex flex-row justify-center md:justify-start items-center pt-7'>
                         <div>
