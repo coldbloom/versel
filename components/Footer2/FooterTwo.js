@@ -225,50 +225,52 @@ const FooterTwo = () => {
                 </strong>
             </div>
             {/*дестопный контент*/}
-            <div className='md:flex flex-col justify-between md:flex-col lg:flex-row pt-10 hidden bg-blue-900 md:px-10'>
-                <div className='flex flex-col md:flex-row lg:justify-around md:justify-start'>
-                    <div className='flex flex-col w-full md:w-36 md:pr-10 '>
-                        {data_contacts.map((item) => <div className='flex justify-center md:justify-start first:text-white first:font-bold text-gray-400 pt-1 text-left text-sm mb-2 first:mb-3 md:first:mb-5 first:text-base' key={item.id}><p className='leading-4'>{item.name}</p></div>)}
+            <div className='bg-blue-900 flex justify-center'>
+                <div className='max-w-screen-xl w-full md:px-10 md:flex flex-col justify-between md:flex-col lg:flex-row pt-10 hidden '>
+                    <div className='flex flex-col md:flex-row lg:justify-around md:justify-start'>
+                        <div className='flex flex-col w-full md:w-36 md:pr-10 '>
+                            {data_contacts.map((item) => <div className='flex justify-center md:justify-start first:text-white first:font-bold text-gray-400 pt-1 text-left text-sm mb-2 first:mb-3 md:first:mb-5 first:text-base' key={item.id}><p className='leading-4'>{item.name}</p></div>)}
+                        </div>
+                        <div className='flex flex-col w-full md:w-36 md:pr-10 pt-10 md:pt-0'>
+                            {data_catalog.map((item) => <div className='flex justify-center md:justify-start first:text-white first:font-bold text-gray-400 pt-1 text-left text-sm mb-2 first:mb-3 md:first:mb-5 first:text-base' key={item.id}><p className='leading-4'>{item.name}</p></div>)}
+                        </div>
+                        <div className='flex flex-col w-full md:w-36 pt-10 md:pt-0'>
+                            {data_services_des.map((item) => <div className='flex justify-center md:justify-start first:text-white first:font-bold text-gray-400 pt-1 text-left text-sm mb-2 first:mb-3 md:first:mb-5 first:text-base' key={item.id}><p className='leading-4'>{item.name}</p></div>)}
+                        </div>
                     </div>
-                    <div className='flex flex-col w-full md:w-36 md:pr-10 pt-10 md:pt-0'>
-                        {data_catalog.map((item) => <div className='flex justify-center md:justify-start first:text-white first:font-bold text-gray-400 pt-1 text-left text-sm mb-2 first:mb-3 md:first:mb-5 first:text-base' key={item.id}><p className='leading-4'>{item.name}</p></div>)}
-                    </div>
-                    <div className='flex flex-col w-full md:w-36 pt-10 md:pt-0'>
-                        {data_services_des.map((item) => <div className='flex justify-center md:justify-start first:text-white first:font-bold text-gray-400 pt-1 text-left text-sm mb-2 first:mb-3 md:first:mb-5 first:text-base' key={item.id}><p className='leading-4'>{item.name}</p></div>)}
+
+                    <div className=''>
+                        <h3 className='text-white text-base font-bold mb-5 flex justify-center md:justify-start'>Наши контакты</h3>
+                        <div className='flex flex-row justify-center md:justify-start items-center'>
+                            <div>
+                                <ImPhone size={18} color='rgb(148 163 184)'/>
+                            </div>
+                            <strong className='items-center flex pl-3 text-white justify-center md:justify-start'>+7 (978) 938-02-21</strong>
+                        </div>
+                        <p className='md:ml-7 text-sm leading-0 text-gray-400 flex justify-center md:justify-start'>Ежедневно / Круглосуточно</p>
+                        <div className='flex flex-row justify-center md:justify-start items-center pt-7'>
+                            <div>
+                                <AiFillEnvironment size={22} color='rgb(148 163 184)'/>
+                            </div>
+                            <p className='md:pl-3 text-white w-64 md:text-left text-center'>Республика Крым, г. Евпатория, проспект Победы, 42, Ярмарка, торговое место №62</p>
+                        </div>
+                        <div className='flex flex-row justify-center md:justify-start items-center pt-7'>
+                            <div>
+                                <IoIosMail size={22} color='rgb(148 163 184)'/>
+                            </div>
+                            <a href="" className='items-center flex pl-3 text-white'>ritevp@gmail.com</a>
+                        </div>
                     </div>
                 </div>
-
-
-                <div className=''>
-                    <h3 className='text-white text-base font-bold mb-5 flex justify-center md:justify-start'>Наши контакты</h3>
-                    <div className='flex flex-row justify-center md:justify-start items-center'>
-                        <div>
-                            <ImPhone size={18} color='rgb(148 163 184)'/>
-                        </div>
-                        <strong className='items-center flex pl-3 text-white justify-center md:justify-start'>+7 (978) 938-02-21</strong>
-                    </div>
-                    <p className='md:ml-7 text-sm leading-0 text-gray-400 flex justify-center md:justify-start'>Ежедневно / Круглосуточно</p>
-                    <div className='flex flex-row justify-center md:justify-start items-center pt-7'>
-                        <div>
-                            <AiFillEnvironment size={22} color='rgb(148 163 184)'/>
-                        </div>
-                        <p className='md:pl-3 text-white w-64 md:text-left text-center'>1Республика Крым, г. Евпатория, проспект Победы, 42, Ярмарка, торговое место №62</p>
-                    </div>
-                    <div className='flex flex-row justify-center md:justify-start items-center pt-7'>
-                        <div>
-                            <IoIosMail size={22} color='rgb(148 163 184)'/>
-                        </div>
-                        <a href="" className='items-center flex pl-3 text-white'>ritevp@gmail.com</a>
-                    </div>
-                </div>
-
             </div>
-            <div className='divide-gray-600 divide-y pt-2 bg-blue-900'>
-                <p className='text-xs text-gray-800 pt-2 pb-4 text-justify px-4'>© 2022 «ГОРОДСКАЯ СЛУЖБА
-                    РИУТАУЛЬНЫХ УСЛУГ» - Все права защищены. Вся представленная на сайте информация носит
-                    исключительно информационный характер
-                    и ни при каких условиях не является публичной офертой, определяемой положениями Статьи 437(2)
-                    Гражданского кодекса РФ.</p>
+            <div className='flex justify-center bg-blue-900'>
+                <div className='divide-gray-600 divide-y pt-2 w-full max-w-screen-xl'>
+                    <p className='text-xs text-gray-800 pt-2 pb-4 text-justify px-4'>© 2022 «ГОРОДСКАЯ СЛУЖБА
+                        РИУТАУЛЬНЫХ УСЛУГ» - Все права защищены. Вся представленная на сайте информация носит
+                        исключительно информационный характер
+                        и ни при каких условиях не является публичной офертой, определяемой положениями Статьи 437(2)
+                        Гражданского кодекса РФ.</p>
+                </div>
             </div>
         </footer>
     )

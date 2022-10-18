@@ -231,15 +231,17 @@ const PackagesTwo = () => {
                             onClick={cremation}>кремации</h1>
                     </div>
                 </div>
-                <div className='flex pt-2'>
-                    <div className='border-4 border-red-700 h-12'>
-                        <div className='w-10 h-10 flex items-center justify-center bg-white'
-                             onClick={compensation}>
-                            <AiOutlineCheck size={40} className={comp ? 'block' : 'hidden'}/>
+                <div className='flex justify-center'>
+                    <div className='flex pt-2 w-full max-w-screen-xl md:px-10 px-4'>
+                        <div className='border-4 border-red-700 h-12'>
+                            <div className='w-10 h-10 flex items-center justify-center bg-white'
+                                 onClick={compensation}>
+                                <AiOutlineCheck size={40} className={comp ? 'block' : 'hidden'}/>
+                            </div>
                         </div>
+                        <p className='ml-2 text-white max-w-3xl'>Показывать цены с учётом пособия на погребение, предусмотренное
+                            законодательством России, для граждан Крымского полуострова</p>
                     </div>
-                    <p className='ml-2 text-white max-w-3xl'>Показывать цены с учётом пособия на погребение, предусмотренное
-                        законодательством России, для граждан Крымского полуострова</p>
                 </div>
                 {/*мобильные компоненты*/}
                 <div className='pt-5 pb-5 md:hidden block'>
@@ -250,13 +252,15 @@ const PackagesTwo = () => {
             </div>
 
             {/*Дестопные компоненты*/}
-            <div className='hidden md:block bg-blue-900 px-4 md:px-10'>
-                <div className={cn('flex md:flex-row pt-10 pb-10')}>
-                    {
-                        packages.map(item => (
-                            <DesktopComp key={item.id} item={item} priceNow={priceNow}/>
-                        ))
-                    }
+            <div className='flex justify-center'>
+                <div className='w-full max-w-screen-xl hidden md:block bg-blue-900 px-4 md:px-10'>
+                    <div className={cn('flex md:flex-row pt-10 pb-10')}>
+                        {
+                            packages.map(item => (
+                                <DesktopComp key={item.id} item={item} priceNow={priceNow}/>
+                            ))
+                        }
+                    </div>
                 </div>
             </div>
 

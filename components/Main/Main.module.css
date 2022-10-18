@@ -74,6 +74,16 @@
     margin: 20px 0 0;
 }
 
+@media (min-width: 1280px) {
+    .mxCustom.mxCustom {
+        right: 0;
+        left: 0;
+        position: static;
+        max-width: 1000px;
+        margin-bottom: -110px;
+    }
+}
+
 .mxCustom {
     right: 10%;
     left: 10%;

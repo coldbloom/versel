@@ -17,11 +17,11 @@ const data = [
         name: 'Кремация',
         url: '/uslugi/kremacija',
         content: 'Чем поможет агент ГУП Ритуал при кремации?' +
-        '1) Проверит, есть ли все документы и правильность из заполнения;' +
-        "2) Поможет с выбором необходимых ритуальных принадлежносткй;" +
-        "3) Возьмет на себя техническую организацию процесса - вовремя подаст катафалк к дверям зала, организует установку гроба на постамент, пригласит участников траурной процессии в зал;" +
-        "4) Организует трансфер прощающихся и усопшего к месту прощания и на поминальную трапезу." +
-        "Позвоните нам по номеру 8-800-100-06-81 в любое время дня и ночи. Если вы не в силах  тратить время на обдумывание каждой детали и не готовы сделать выбор, наш агент приедет к вам, покажет вам каталог, и объяснит все особенности того или иного ритуального продукта."
+            '1) Проверит, есть ли все документы и правильность из заполнения;' +
+            "2) Поможет с выбором необходимых ритуальных принадлежносткй;" +
+            "3) Возьмет на себя техническую организацию процесса - вовремя подаст катафалк к дверям зала, организует установку гроба на постамент, пригласит участников траурной процессии в зал;" +
+            "4) Организует трансфер прощающихся и усопшего к месту прощания и на поминальную трапезу." +
+            "Позвоните нам по номеру 8-800-100-06-81 в любое время дня и ночи. Если вы не в силах  тратить время на обдумывание каждой детали и не готовы сделать выбор, наш агент приедет к вам, покажет вам каталог, и объяснит все особенности того или иного ритуального продукта."
     },
     {
         id: '0003vrz',
@@ -121,8 +121,8 @@ const Parent = () => {
         setMobileActive(false);
     }
 
-    return(
-        <div className='bg-blue-900 pt-10 pb-10 px-10 flex justify-center flex-col'>
+    return (
+        <div className='bg-blue-900 pt-10 pb-10 flex justify-center flex-col'>
             <h2 className='text-white font-bold text-3xl text-center mb-5'>Полный комплекс ритуальных услуг</h2>
             {/*мобильный экран*/}
             <div className='block md:hidden'>
@@ -130,13 +130,13 @@ const Parent = () => {
             </div>
             {/*дестоп*/}
             <div className='flex justify-center'>
-                <div className='md:flex hidden max-w-screen-xl w-full'>
+                <div className='md:flex hidden max-w-screen-xl w-full md:px-10 px-4'>
                     {data.map((item) => (<Item key={item.id} item={item} activeId={content.id} papaFunc={papaFunc}/>))}
                 </div>
             </div>
             <div className='flex justify-center'>
-                <div className='hidden text-white md:block max-w-screen-xl p-5 border-x border-b rounded-b text-justify'>
-                    {content.content}
+                <div className='hidden text-white md:block max-w-screen-xl text-justify md:px-10 px-4'>
+                    <p className='border-x border-b rounded-b p-5'>{content.content}</p>
                 </div>
             </div>
         </div>
