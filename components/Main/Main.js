@@ -9,6 +9,7 @@ import AskAndAnswer from "../AskAndAnswer/AskAndAnswer";
 import CompensationTwo from "../Compensation2/CompensationTwo";
 import Ringing from "../Ringing/Ringing";
 import ProductsTwo from "../Products2/ProductsTwo";
+import RitualSlierTwo from "../Slider/RitualSlierTwo";
 
 
 const Main = () => {
@@ -29,6 +30,8 @@ const Main = () => {
             <ProductsTwo />
 
             <RitualSlider />
+
+            <RitualSlierTwo />
 
             <Ringing />
 
