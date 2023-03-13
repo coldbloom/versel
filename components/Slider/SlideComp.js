@@ -3,7 +3,7 @@ import styles from "./RitualSlider.module.css";
 
 const SlideComp = ({data}) => {
     return (
-        <div className='pb-10'>
+        <div className='pb-10 px-10 sm:px-0'>
             <div className='mx-1 bg-white h-full px-4 pt-4 pb-2 border rounded shadow-xl max-h-80 overflow-y-auto'>
                 <div className='flex justify-between'>
                     <div className='text-blue-900 opacity-70'>

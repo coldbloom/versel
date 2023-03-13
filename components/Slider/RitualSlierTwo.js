@@ -120,7 +120,7 @@ const RitualSlierTwo = () => {
     return (
         <div className='flex flex-col items-center md:px-10 pb-10 pt-10'>
             <h2 className='text-3xl font-bold pb-4'>Отзывы о нашей работе</h2>
-            <div className='px-10 max-w-screen-xl w-full pb-20'>
+            <div className='md:px-10 max-w-screen-xl w-full pb-20'>
                 <Swiper
                     loop={true}
                     spaceBetween={2}
