@@ -175,7 +175,7 @@ const data_information = [
     },
 ]
 
-const FooterTwo = () => {
+const Footer = () => {
     return (
         <footer>
             <div className='h-4 bg-gradient-to-b from-white to-blue-900'></div>
@@ -276,4 +276,4 @@ const FooterTwo = () => {
     )
 }
 
-export default FooterTwo
+export default Footer

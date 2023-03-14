@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 import Header from "../../components/Header/Header";
 import Ringing from "../../components/Ringing/Ringing";
 import RitualSlider from "../../components/Slider/RitualSlider";
-import FooterTwo from "../../components/Footer2/FooterTwo";
+import Footer from "../../components/Footer/Footer";
 import Navigation from "../../components/Navigation/Navigation";
 
 import { FaPlaneDeparture, FaCar, FaTrain } from "react-icons/fa";
@@ -67,7 +67,7 @@ const Gruz = () => {
             </div>
             <Ringing />
             <RitualSlider />
-            <FooterTwo />
+            <Footer />
         </div>
     )
 }

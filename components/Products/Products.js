@@ -2,7 +2,7 @@ import React from "react";
 import ChildComponent from "./ChildComponent";
 import Link from "next/link"
 
-const ProductsTwo = () => {
+const Products = () => {
     return (
         <div className='bg-blue-900 flex justify-center'>
             <div className='w-full max-w-screen-xl md:px-10 px-4 text-white pb-10 pt-10'>
@@ -31,4 +31,4 @@ const ProductsTwo = () => {
     )
 }
 
-export default ProductsTwo
+export default Products

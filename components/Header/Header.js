@@ -1,6 +1,4 @@
 import React, {useRef, useState} from 'react'
-import {AiOutlineUnorderedList} from 'react-icons/ai'
-import {AiOutlineClose} from 'react-icons/ai'
 import Menu from '../Menu/Menu'
 import styles from './Header.module.css'
 
@@ -55,11 +53,11 @@ const Header = () => {
             <div className={cn('bg-blue-900 flex justify-end mt-4 text-white md:mt-3 md:justify-center')}>
                 <nav className='hidden md:block'>
                     <ul className='flex text-white pt-2.5 pb-2'>
-                        <li className='text-xs font-medium mr-10 uppercase'><Link href="/" passHref>Главная</Link></li>
-                        <li className='text-xs font-medium mr-10 uppercase'>Ритуальные услуги</li>
-                        <li className=' text-xs font-medium mr-10 uppercase'>Ритуальные товары</li>
-                        <li className=' text-xs font-medium mr-10 uppercase'>Справочная информация</li>
-                        <li className=' text-xs font-medium uppercase'>Контакты</li>
+                        <li className='text-xs font-medium mr-10 uppercase lg:text-base'><Link href="/" passHref>Главная</Link></li>
+                        <li className='text-xs font-medium mr-10 uppercase lg:text-base'>Ритуальные услуги</li>
+                        <li className=' text-xs font-medium mr-10 uppercase lg:text-base'>Ритуальные товары</li>
+                        <li className=' text-xs font-medium mr-10 uppercase lg:text-base'>Справочная информация</li>
+                        <li className=' text-xs font-medium uppercase lg:text-base'>Контакты</li>
                     </ul>
                 </nav>
 

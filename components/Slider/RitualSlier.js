@@ -1,6 +1,9 @@
-import React from 'react';
+import React, {useRef} from 'react';
+import cn from "classnames";
+import styles from './RitualSlider.module.css'
 
 import {Swiper, SwiperSlide} from 'swiper/react';
+import {FaChevronLeft, FaChevronRight} from 'react-icons/fa'
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
@@ -116,16 +119,22 @@ const items = [
     }
 ]
 
-const RitualSlierTwo = () => {
+const RitualSlier = () => {
+    const swiperRef = useRef();
     return (
-        <div className='flex flex-col items-center md:px-10 pb-10 pt-10'>
+        <div className='flex flex-col items-center pb-10 pt-10'>
             <h2 className='text-3xl font-bold pb-4'>Отзывы о нашей работе</h2>
-            <div className='md:px-10 max-w-screen-xl w-full pb-20'>
+            <div className='max-w-screen-xl w-full flex row relative px-10'>
+                <button onClick={() => swiperRef.current?.slidePrev()} className={cn(styles.arrowContainer, styles.prev)}>
+                    <FaChevronLeft size={30}></FaChevronLeft>
+                </button>
+
                 <Swiper
+                    className='px-10'
                     loop={true}
                     spaceBetween={2}
                     navigation={true}
-                    modules={[Navigation, Thumbs, Pagination]}
+                    modules={[Thumbs, Pagination]}
                     grabCursor={true}
                     //slidesPerView={1} //
                     pagination={{
@@ -133,13 +142,16 @@ const RitualSlierTwo = () => {
                         dynamicBullets: true,
                         dynamicMainBullets: 4,
                     }}
+                    onBeforeInit={(swiper) => {  // customs arrow-button ref
+                        swiperRef.current = swiper;
+                    }}
                     breakpoints={{
                         576: {
                             slidesPerView: 1,
                         },
-                        // 768: {
-                        //     slidesPerView: 2,
-                        // },
+                        768: {
+                            slidesPerView: 2,
+                        },
                         992: {
                             slidesPerView: 3,
                         }
@@ -151,9 +163,14 @@ const RitualSlierTwo = () => {
                         </SwiperSlide>
                     )}
                 </Swiper>
+
+                <button onClick={() => swiperRef.current?.slideNext()} className={cn(styles.arrowContainer, styles.next)}>
+                    <FaChevronRight size={30}></FaChevronRight>
+                </button>
             </div>
+            <button className='border-2 border-blue-900 text-blue-900 rounded font-bold px-5 py-2 mt-7'>Все отзывы</button>
         </div>
     );
 };
 
-export default RitualSlierTwo;
+export default RitualSlier;

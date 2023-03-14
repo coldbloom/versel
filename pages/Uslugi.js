@@ -4,7 +4,7 @@ import Link from "next/link";
 import Header from "../components/Header/Header";
 import Ringing from "../components/Ringing/Ringing";
 import RitualSlider from "../components/Slider/RitualSlider";
-import FooterTwo from "../components/Footer2/FooterTwo";
+import Footer from "../components/Footer/Footer";
 
 const Uslugi = () => {
     return(
@@ -37,7 +37,7 @@ const Uslugi = () => {
             </div>
             <Ringing />
             <RitualSlider />
-            <FooterTwo />
+            <Footer />
         </div>
     )
 }

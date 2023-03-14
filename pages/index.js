@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Main from './../components/Main/Main'
 
 import Header from "../components/Header/Header";
-import FooterTwo from '../components/Footer2/FooterTwo'
+import Footer from '../components/Footer/Footer'
 
 export default function Home() {
     return (
@@ -19,7 +19,7 @@ export default function Home() {
                 <Main/>
             </main>
 
-            <FooterTwo/>
+            <Footer/>
         </div>
     )
 }

@@ -1,6 +1,6 @@
 import React from 'react'
 import Header from "../components/Header/Header";
-import FooterTwo from "../components/Footer2/FooterTwo";
+import Footer from "../components/Footer/Footer";
 import Link from "next/link";
 import {TiArrowBack} from 'react-icons/ti'
 import Ringing from "../components/Ringing/Ringing";
@@ -214,7 +214,7 @@ const Chelovek = () => {
                 </ul>
             </div>
             <Ringing />
-            <FooterTwo/>
+            <Footer/>
         </div>
     )
 }

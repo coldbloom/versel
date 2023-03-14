@@ -1,6 +1,6 @@
 import React from 'react'
 import Header from "../components/Header/Header";
-import FooterTwo from "../components/Footer2/FooterTwo";
+import Footer from "../components/Footer/Footer";
 
 const Kontacts = () => {
     return (
@@ -11,7 +11,7 @@ const Kontacts = () => {
                 <h1 className='text-2xl font-bold pt-2 text-center'>Контакты</h1>
             </div>
 
-            <FooterTwo />
+            <Footer />
         </div>
     )
 }

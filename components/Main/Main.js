@@ -3,13 +3,12 @@ import Rules from '../Rules/Rules'
 import Map from '../Map/Map'
 import FirstPage from "../Firstpage/Firstpage";
 import Parent from "../testService/Parent";
-import PackagesTwo from "../Packages2/PackagesTwo";
-import RitualSlider from "../Slider/RitualSlider";
+import Packages from "../Packages2/Packages";
 import AskAndAnswer from "../AskAndAnswer/AskAndAnswer";
-import CompensationTwo from "../Compensation2/CompensationTwo";
+import Compensation from "../Compensation/Compensation";
 import Ringing from "../Ringing/Ringing";
-import ProductsTwo from "../Products2/ProductsTwo";
-import RitualSlierTwo from "../Slider/RitualSlierTwo";
+import Products from "../Products/Products";
+import RitualSlier from "../Slider/RitualSlier";
 
 
 const Main = () => {
@@ -23,15 +22,13 @@ const Main = () => {
 
             <Parent />
 
-            <CompensationTwo />
+            <Compensation />
 
-            <PackagesTwo />
+            <Packages />
 
-            <ProductsTwo />
+            <Products />
 
-            <RitualSlider />
-
-            <RitualSlierTwo />
+            <RitualSlier />
 
             <Ringing />
 

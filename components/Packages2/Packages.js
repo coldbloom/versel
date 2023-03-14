@@ -173,7 +173,7 @@ const packages = [
 ]
 
 
-const PackagesTwo = () => {
+const Packages = () => {
 
     const [priceNow, setPriceNow] = useState([2000, 15000, 40000]);
     const [comp, setComp] = React.useState(true);
@@ -271,4 +271,4 @@ const PackagesTwo = () => {
     )
 }
 
-export default PackagesTwo
+export default Packages

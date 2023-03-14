@@ -1,6 +1,6 @@
 import React from 'react'
 
-const CompensationTwo = () => {
+const Compensation = () => {
     return (
         <div className='flex justify-center'>
             <div className='px-4 md:px-10 pt-10 pb-10 w-full max-w-screen-xl'>
@@ -38,4 +38,4 @@ const CompensationTwo = () => {
     )
 }
 
-export default CompensationTwo
+export default Compensation
