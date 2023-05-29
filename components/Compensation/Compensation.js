@@ -25,7 +25,7 @@ const Compensation = () => {
                                 человек, затративший собственные средства на организацию похорон.</p>
                         </div>
                     </div>
-                    <div className='md:mx-0 mx-4 px-4 bg-blue-900 rounded text-white text-center md:flex md:justify-center flex-col'>
+                    <div className='md:mx-0 mx-4 px-4 secondary rounded text-white text-center md:flex md:justify-center flex-col'>
                         <p className='text-sm md:text-base leading-5 py-3'>Узнайте, как получить пособие на погребение по круглосуточному
                             телефону горячей линии</p>
                         <strong className='md:text-lg'>8-978-938-02-21</strong>

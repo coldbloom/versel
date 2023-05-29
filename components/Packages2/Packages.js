@@ -216,7 +216,7 @@ const Packages = () => {
     }
 
     return (
-        <div className="bg-blue-900 pt-10">
+        <div className="secondary pt-10">
             <div className='px-4 md:px-10'>
                 <p className='text-white md:text-lg font-semibold leading-5 md:text-center'>Стоимость услуг и
                     ритуальных товаров зафиксирована в договоре
@@ -253,7 +253,7 @@ const Packages = () => {
 
             {/*Дестопные компоненты*/}
             <div className='flex justify-center'>
-                <div className='w-full max-w-screen-xl hidden md:block bg-blue-900 px-4 md:px-10'>
+                <div className='w-full max-w-screen-xl hidden md:block secondary px-4 md:px-10'>
                     <div className={cn('flex md:flex-row pt-10 pb-10')}>
                         {
                             packages.map(item => (

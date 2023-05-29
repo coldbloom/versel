@@ -49,7 +49,7 @@ const Rules = () => {
             </div>
 
             <div className='flex justify-center mt-2'>
-                <div className='flex justify-center bg-red-700 w-32 rounded'>
+                <div className='flex justify-center primary w-32 rounded'>
                     <Link href="/chelovek" passHref><a className='text-white p-2'>ПОДРОБНЕЕ</a></Link>
                 </div>
             </div>

@@ -6,7 +6,7 @@ import s from './Menu.module.css'
 const Menu = ({height, menuRef}) => {
 
     return (
-        <div className={cn('bg-blue-900', s.alertBlock)} style={{maxHeight: height}} ref={menuRef}>
+        <div className={cn('secondary', s.alertBlock)} style={{maxHeight: height}} ref={menuRef}>
             <nav>
                 <ul className={cn('flex flex-col justify-center text-white', s.alertText)}>
                     <li className='flex justify-center text-xl pt-3 pb-1'><Link href='/' passHref>Главная</Link></li>

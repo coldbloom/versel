@@ -29,7 +29,7 @@ const Additional = () => {
                 </div>
                 <div className='flex justify-center bg-white '>
                     <div className='flex md:flex-row flex-col pt-32 px-4 md:px-10 pb-12 w-full max-w-screen-xl md:px-10 px-4'>
-                        <div className='mb-4 px-6 md:mb-0 bg-blue-900 rounded text-white md:px-7 md:w-1/3 md:mr-4 shadow'>
+                        <div className='mb-4 px-6 md:mb-0 secondary rounded text-white md:px-7 md:w-1/3 md:mr-4 shadow'>
                             <h3 className='pt-5 pb-3 text-2xl font-bold md:pt-6 md:text-2xl md:font-bold md:pb-4'>Рассрочка
                                 0 / 0 / 12</h3>
                             <p className='text-sm font-bold md:pb-3 pb-2 leading-4'>Похороны можно оформить в рассрочку</p>

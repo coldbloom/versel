@@ -33,7 +33,7 @@ const Header = () => {
                             ЕВПАТОРИЯ</h2>
                     </div>
 
-                    <div className='bg-red-700 rounded-xl text-white flex flex-col mx-8 md:flex-row md:mx-0 md:px-3'>
+                    <div className='primary rounded-xl text-white flex flex-col mx-8 md:flex-row md:mx-0 md:px-3'>
                         <div className='flex flex-row justify-center'>
                             <div className='flex items-center pb-1 md:pb-0 pr-1.5'>
                                 <div
@@ -46,11 +46,11 @@ const Header = () => {
                             </span>
                         </div>
                         <strong
-                            className={cn('flex justify-center pb-1 text-xl md:items-center md:py-0 md:text-lg text-green-300', styles.text__color)}>8-978-938-02-21</strong>
+                            className={cn('flex justify-center pb-1 text-xl md:items-center md:py-0 md:text-lg text-green-300 tracking-widest', styles.text__color)}>8-978-938-02-21</strong>
                     </div>
                 </div>
             </div>
-            <div className={cn('bg-blue-900 flex justify-end mt-4 text-white md:mt-3 md:justify-center')}>
+            <div className={cn('secondary flex justify-end mt-4 text-white md:mt-3 md:justify-center')}>
                 <nav className='hidden md:block'>
                     <ul className='flex text-white pt-2.5 pb-2'>
                         <li className='text-xs font-medium mr-10 uppercase lg:text-base'><Link href="/" passHref>Главная</Link></li>

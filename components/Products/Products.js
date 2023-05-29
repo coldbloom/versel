@@ -4,7 +4,7 @@ import Link from "next/link"
 
 const Products = () => {
     return (
-        <div className='bg-blue-900 flex justify-center'>
+        <div className='secondary flex justify-center'>
             <div className='w-full max-w-screen-xl md:px-10 px-4 text-white pb-10 pt-10'>
                 <h2 className='font-bold text-3xl flex justify-center pb-5'>Товары</h2>
                 <div className='flex flex-col md:flex-row'>

@@ -179,7 +179,7 @@ const Footer = () => {
     return (
         <footer>
             <div className='h-4 bg-gradient-to-b from-white to-blue-900'></div>
-            <div className='bg-blue-900 flex justify-center'>
+            <div className='secondary flex justify-center'>
                 <div className='max-w-screen-xl w-full pb-4 pt-2 px-4 md:px-10 flex justify-around'>
                     <div>
                         <FaTelegramPlane size={24} color='rgb(148 163 184)'/>
@@ -199,7 +199,7 @@ const Footer = () => {
                 </div>
             </div>
             {/*мобильный контент*/}
-            <div className={cn('max-w-screen-xl md:px-10 md:hidden bg-blue-900 text-white')}>
+            <div className={cn('max-w-screen-xl md:px-10 md:hidden secondary text-white')}>
                 <div className='border-t'></div>
                 <ChildComponent name='Ритуальные услуги' data={data_services}/>
                 <ChildComponent name='Ритуальные товары' data={data_products}/>
@@ -225,7 +225,7 @@ const Footer = () => {
                 </strong>
             </div>
             {/*дестопный контент*/}
-            <div className='bg-blue-900 flex justify-center'>
+            <div className='secondary flex justify-center'>
                 <div className='max-w-screen-xl w-full md:px-10 md:flex flex-col justify-between md:flex-col lg:flex-row pt-10 hidden '>
                     <div className='flex flex-col md:flex-row lg:justify-around md:justify-start'>
                         <div className='flex flex-col w-full md:w-36 md:pr-10 '>
@@ -263,7 +263,7 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-            <div className='flex justify-center bg-blue-900'>
+            <div className='flex justify-center secondary'>
                 <div className='divide-gray-600 divide-y pt-2 w-full max-w-screen-xl'>
                     <p className='text-xs text-gray-800 pt-2 pb-4 text-justify px-4'>© 2022 «ГОРОДСКАЯ СЛУЖБА
                         РИУТАУЛЬНЫХ УСЛУГ» - Все права защищены. Вся представленная на сайте информация носит

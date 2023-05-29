@@ -73,3 +73,14 @@ a {
 body .swiper-button-prev, body .swiper-button-next {
   display: none;
 }
+
+/*было bg-blue-900 и bg-red-700*/
+.primary {
+  background-color: rgb(153 27 27);
+}
+.secondary {
+  background-color: #034C8C;
+}
+.tertiary {
+  background-color: #034C8C;
+}

@@ -122,7 +122,7 @@ const Parent = () => {
     }
 
     return (
-        <div className='bg-blue-900 pt-10 pb-10 flex justify-center flex-col'>
+        <div className='secondary pt-10 pb-10 flex justify-center flex-col'>
             <h2 className='text-white font-bold text-3xl text-center mb-5'>Полный комплекс ритуальных услуг</h2>
             {/*мобильный экран*/}
             <div className='block md:hidden'>
