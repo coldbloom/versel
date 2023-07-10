@@ -4,23 +4,15 @@ import styles from './Header.module.css'
 
 import cn from 'classnames'
 import Link from 'next/link'
+import Burger from "../Burger/Burger";
 
 const Header = () => {
 
-    const [burger_class, setBurgerClass] = useState("burger-bar unclicked")
-    const [isMenuClicked, setMenuClicked] = useState(false)
     const [height, setHeight] = useState('0px')
     const menu = useRef(null);
 
-    const updateMenu = () => {
-        if (!isMenuClicked) {
-            setBurgerClass("burger-bar clicked")
-            setHeight(`${menu.current.scrollHeight}px`)
-        } else {
-            setBurgerClass("burger-bar unclicked")
-            setHeight('0px')
-        }
-        setMenuClicked(!isMenuClicked)
+    const changeHeight = (prop) => {
+        setHeight(prop)
     }
 
     return (
@@ -60,15 +52,8 @@ const Header = () => {
                     </ul>
                 </nav>
 
-                <div className='block md:hidden flex flex-row p-2'>
-                    <div className='flex items-center box-border'>
-                        <div className='burger-menu' onClick={updateMenu}>
-                            <div className={burger_class}></div>
-                            <div className={burger_class}></div>
-                            <div className={burger_class}></div>
-                        </div>
-                    </div>
-                </div>
+                <Burger changeHeight={changeHeight} menu={menu}/>
+
             </div>
             <div className={styles.borderTop}>
                 <Menu height={height} menuRef={menu}/>
