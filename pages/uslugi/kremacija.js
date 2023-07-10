@@ -2,7 +2,7 @@ import React from 'react'
 import Header from "../../components/Header/Header";
 import Navigation from "../../components/Navigation/Navigation";
 import Ringing from "../../components/Ringing/Ringing";
-import RitualSlider from "../../components/Slider/RitualSlider";
+import RitualSlider from "../../components/Slider/RitualSlier";
 import Footer from "../../components/Footer/Footer";
 
 const Kremacija = () => {

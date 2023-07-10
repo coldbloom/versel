@@ -3,7 +3,7 @@ import {TiArrowBack} from "react-icons/ti";
 import Link from "next/link";
 import Header from "../components/Header/Header";
 import Ringing from "../components/Ringing/Ringing";
-import RitualSlider from "../components/Slider/RitualSlider";
+import RitualSlider from "../components/Slider/RitualSlier";
 import Footer from "../components/Footer/Footer";
 
 const Uslugi = () => {
