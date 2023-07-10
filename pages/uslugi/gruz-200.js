@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 import Header from "../../components/Header/Header";
 import Ringing from "../../components/Ringing/Ringing";
-import RitualSlider from "../../components/Slider/RitualSlider";
+import RitualSlider from "../../components/Slider/RitualSlier";
 import Footer from "../../components/Footer/Footer";
 import Navigation from "../../components/Navigation/Navigation";
 
