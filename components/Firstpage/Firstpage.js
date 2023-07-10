@@ -3,7 +3,7 @@ import style from "../Main/Main.module.css";
 import {AiFillPhone} from "react-icons/ai";
 import Image from "next/image";
 import cn from 'classnames'
-import sobor2 from "../../assets/images/evpatoriya-plyus.jpg"
+import mainBg from "../../assets/images/evpatoriya-plyus.jpg"
 
 const FirstPage = () => {
     return(
@@ -28,7 +28,7 @@ const FirstPage = () => {
             <div>
                 <div className={`mt-12 max-w-2xl mx-auto ${style.image}`}>
                     <Image
-                        src={sobor2}
+                        src={mainBg}
                         alt="Собор"
                         className={`mt-5 w-full h-full object-cover`}
                     />

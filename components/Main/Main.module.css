@@ -15,20 +15,10 @@
     background-color: rgba(0, 0, 0, 0.2);
 }
 
-.image2 {
-    width: 200px;
-}
-
 .custom {
     left: 50%;
     transform: translateX(-50%);
     width: 100%;
-}
-
-.background {
-    background-image: url('./../../assets/images/sobor.jpg');
-    width: 100%;
-
 }
 
 .div {

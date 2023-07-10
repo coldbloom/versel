@@ -30,15 +30,15 @@ const Ringing = () => {
                     className='border-2 border-blue-900 rounded-xl w-fit mt-10 md:mt-0 md:ml-10 px-4 py-2 flex flex-col items-center'>
                     <div className='flex flex-row items-center pb-2'>
                         <ImWhatsapp color='#25D366' size={22}/>
-                        <a href="" className={cn('underline pl-1', s.wats)}>WhatsApp</a>
+                        <a href="https://wa.me/79789380221" className={cn('underline pl-1', s.wats)}>WhatsApp</a>
                     </div>
                     <div className='flex flex-row items-center pb-2'>
                         <FaTelegramPlane color="#229ED9" size={22}/>
-                        <a href="" className={cn('underline pl-1', s.tg)}>Telegram</a>
+                        <a href="tg://resolve?domain=ritevp&text=Здравствуйте, Виталий" className={cn('underline pl-1', s.tg)}>Telegram</a>
                     </div>
                     <div className='flex flex-row items-center'>
                         <FaViber color="#7360F2" size={22}/>
-                        <a href="" className={cn('underline pl-1', s.vb)}>Viber</a>
+                        <a href="viber://add?number=79789380221&text=Здравствуйте, Виталий" className={cn('underline pl-1', s.vb)}>Viber</a>
                     </div>
                 </div>
             </div>
