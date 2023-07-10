@@ -258,7 +258,7 @@ const Footer = () => {
                             <div>
                                 <IoIosMail size={22} color='rgb(148 163 184)'/>
                             </div>
-                            <a href="" className='items-center flex pl-3 text-white'>ritevp@gmail.com</a>
+                            <a href="mailto:ritevp@gmail.com" className='items-center flex pl-3 text-white'>ritevp@gmail.com</a>
                         </div>
                     </div>
                 </div>
