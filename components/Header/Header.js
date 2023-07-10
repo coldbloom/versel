@@ -29,8 +29,7 @@ const Header = () => {
                 <div
                     className='flex flex-col md:flex-row md:justify-between md:items-center md:mt-3 md:px-14 max-w-screen-xl lg:w-full md:w-full'>
                     <div>
-                        <h2 className='flex justify-center text-2xl font-bold mt-5 md:mt-0 md:text-xl'>РИТУАЛ
-                            ЕВПАТОРИЯ</h2>
+                        <h2 className='flex justify-center text-2xl font-bold mt-5 md:mt-0 md:text-xl'>РИТУАЛЬНАЯ ПОМОЩЬ</h2>
                     </div>
 
                     <div className='primary rounded-xl text-white flex flex-col mx-8 md:flex-row md:mx-0 md:px-3'>
