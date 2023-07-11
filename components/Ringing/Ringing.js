@@ -28,7 +28,7 @@ const Ringing = () => {
                     <div className='flex flex-row items-center'>
                         <GoMail size={22} color="rgb(30 58 138)"/>
                         <a className='text-xl pl-2 text-blue-900 underline font-bold'
-                           href="mailto:ritevp@gmail.com"
+                           href="mailto:ritevp@gmail.com?subject=Запрос на информацию&body=Здравствуйте, я хотел бы получить дополнительную информацию о вашей компании."
                         >
                             ritevp@gmail.com
                         </a>
