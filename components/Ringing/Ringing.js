@@ -19,11 +19,19 @@ const Ringing = () => {
                 <div>
                     <div className='flex flex-row items-center pb-2'>
                         <FiPhone size={22} color="rgb(30 58 138)"/>
-                        <strong className='text-xl pl-2 text-blue-900'>+7&nbsp;(978)&nbsp;938-02-21</strong>
+                        <a className='text-xl pl-2 text-blue-900 underline font-bold'
+                           href="tel:+79789380221"
+                        >
+                            +7&nbsp;(978)&nbsp;938-02-21
+                        </a>
                     </div>
                     <div className='flex flex-row items-center'>
                         <GoMail size={22} color="rgb(30 58 138)"/>
-                        <strong className='text-xl pl-2 text-blue-900'>ritevp@gmail.com</strong>
+                        <a className='text-xl pl-2 text-blue-900 underline font-bold'
+                           href="mailto:ritevp@gmail.com"
+                        >
+                            ritevp@gmail.com
+                        </a>
                     </div>
                 </div>
                 <div

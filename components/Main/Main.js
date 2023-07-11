@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react'
+import React from 'react'
 import Rules from '../Rules/Rules'
 import Map from '../Map/Map'
 import FirstPage from "../Firstpage/Firstpage";
