@@ -84,3 +84,11 @@ body .swiper-button-prev, body .swiper-button-next {
 .tertiary {
   background-color: #034C8C;
 }
+
+.notFoundPage {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}

@@ -28,7 +28,7 @@ const Compensation = () => {
                     <div className='md:mx-0 mx-4 px-4 secondary rounded text-white text-center md:flex md:justify-center flex-col'>
                         <p className='text-sm md:text-base leading-5 py-3'>Узнайте, как получить пособие на погребение по круглосуточному
                             телефону горячей линии</p>
-                        <strong className='md:text-lg'>8-978-938-02-21</strong>
+                        <a href="tel:+79789380221" className='md:text-lg font-bold underline decoration-2'>8-978-938-02-21</a>
                         <p className='text-xs md:text-base pb-3 pt-3'>Консультация по вопросам кремации и организации похорон проводится
                             бесплатно</p>
                     </div>

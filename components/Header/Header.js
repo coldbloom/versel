@@ -38,7 +38,7 @@ const Header = () => {
                             </span>
                             </div>
                             <strong
-                                className={cn('flex justify-center pb-1 text-xl md:items-center md:py-0 md:text-lg text-green-300 tracking-widest', styles.text__color)}>
+                                className={cn('flex justify-center pb-1 text-xl md:items-center md:py-0 md:text-lg text-green-300 tracking-widest underline decoration-2', styles.text__color)}>
                                 8-978-938-02-21
                             </strong>
                         </div>
