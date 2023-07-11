@@ -13,7 +13,7 @@ const FirstPage = () => {
                     <AiFillPhone className={cn(style.phoneSize, 'mr-1')}/>
                     <span className='block md:text-2xl'>Круглосуточная справочная</span>
                 </div>
-                <strong className='flex justify-center mb-2 md:mb-0 md:text-2xl tracking-wide'>
+                <strong className='flex justify-center mb-2 md:mb-0 md:text-2xl tracking-wide underline'>
                     8&thinsp;-&thinsp;978&thinsp;-&thinsp;938&thinsp;-&thinsp;02&thinsp;-&thinsp;21
                 </strong>
             </div>

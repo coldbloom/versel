@@ -24,21 +24,25 @@ const Header = () => {
                         <h2 className='flex justify-center text-2xl font-bold mt-5 md:mt-0 md:text-xl'>РИТУАЛЬНАЯ ПОМОЩЬ</h2>
                     </div>
 
-                    <div className='primary rounded-xl text-white flex flex-col mx-8 md:flex-row md:mx-0 md:px-3'>
-                        <div className='flex flex-row justify-center'>
-                            <div className='flex items-center pb-1 md:pb-0 pr-1.5'>
-                                <div
-                                    className={cn(styles.blink, styles.bg__color, 'flex justify-center p-1 rounded-2xl')}>
+                    <Link href="tel:+1234567890">
+                        <div className='primary rounded-xl text-white flex flex-col mx-8 md:flex-row md:mx-0 md:px-3 cursor-pointer'>
+                            <div className='flex flex-row justify-center'>
+                                <div className='flex items-center pb-1 md:pb-0 pr-1.5'>
+                                    <div
+                                        className={cn(styles.blink, styles.bg__color, 'flex justify-center p-1 rounded-2xl')}>
+                                    </div>
                                 </div>
-                            </div>
-                            <span
-                                className={cn('block flex justify-center pt-1 text-xl md:items-center md:mr-1 md:py-0 md:my-0 mb-1 md:text-lg', styles.text__color)}>
+                                <span
+                                    className={cn('block flex justify-center pt-1 text-xl md:items-center md:mr-1 md:py-0 md:my-0 mb-1 md:text-lg', styles.text__color)}>
                                 Круглосуточная справочная
                             </span>
+                            </div>
+                            <strong
+                                className={cn('flex justify-center pb-1 text-xl md:items-center md:py-0 md:text-lg text-green-300 tracking-widest', styles.text__color)}>
+                                8-978-938-02-21
+                            </strong>
                         </div>
-                        <strong
-                            className={cn('flex justify-center pb-1 text-xl md:items-center md:py-0 md:text-lg text-green-300 tracking-widest', styles.text__color)}>8-978-938-02-21</strong>
-                    </div>
+                    </Link>
                 </div>
             </div>
             <div className={cn('secondary flex justify-end mt-4 text-white md:mt-3 md:justify-center')}>
