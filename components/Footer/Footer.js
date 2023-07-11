@@ -181,21 +181,21 @@ const Footer = () => {
             <div className='h-4 bg-gradient-to-b from-white to-blue-900'></div>
             <div className='secondary flex justify-center'>
                 <div className='max-w-screen-xl w-full pb-4 pt-2 px-4 md:px-10 flex justify-around'>
-                    <div>
+                    <a href="tg://resolve?domain=ritevp&text=Здравствуйте, Виталий">
                         <FaTelegramPlane size={24} color='rgb(148 163 184)'/>
-                    </div>
+                    </a>
                     <div>
                         <ImVk size={24} color='rgb(148 163 184)'/>
                     </div>
                     <div>
                         <FaOdnoklassniki size={24} color='rgb(148 163 184)'/>
                     </div>
-                    <div>
+                    <a href="https://wa.me/79789380221">
                         <IoLogoWhatsapp size={24} color='rgb(148 163 184)'/>
-                    </div>
-                    <div>
+                    </a>
+                    <a href="viber://add?number=79789380221&text=Здравствуйте, Виталий">
                         <FaViber size={24} color='rgb(148 163 184)'/>
-                    </div>
+                    </a>
                 </div>
             </div>
             {/*мобильный контент*/}
@@ -221,7 +221,7 @@ const Footer = () => {
                 </div>
                 <strong
                     className={cn('flex justify-center pb-1 text-xl md:items-center md:py-0 md:text-lg text-green-300', styles.text__color)}>
-                    8-978-938-02-21
+                    <a href="tel:+79789380221">8-978-938-02-21</a>
                 </strong>
             </div>
             {/*дестопный контент*/}
