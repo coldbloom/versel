@@ -184,15 +184,7 @@ const Packages = () => {
     const [modal, setModal] = useState(false)
 
     React.useEffect(() => {
-        const handleclick = () => {
-            document.body.style.overflow = modal ? 'hidden' : 'auto';
-        };
-
-        document.addEventListener('click', handleclick);
-
-        return () => {
-            document.removeEventListener('click', handleclick);
-        }
+        document.body.style.overflow = modal ? 'hidden' : 'auto';
     }, [modal])
 
     const visibleModal = () => {
