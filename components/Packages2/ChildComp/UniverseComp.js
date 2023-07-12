@@ -1,7 +1,8 @@
 import React from "react";
 import {AiOutlineCheckCircle, AiOutlineExclamationCircle} from "react-icons/ai";
 
-const UniverseComp = ({item}) => {
+const UniverseComp = ({item, visibleModal}) => {
+
     return(
         <div>
             <div className='flex flex-col h-max justify-between'>
@@ -43,6 +44,7 @@ const UniverseComp = ({item}) => {
             <div>
                 <div className='flex justify-center pb-5 h-max pt-5'>
                     <button
+                        onClick={() => visibleModal()}
                         className='w-10/12 rounded-md border-2 border-blue-900 px-6 py-2 font-bold text-lg text-blue-900'>
                         Оформить
                     </button>

@@ -4,6 +4,8 @@ import MobileComp from "./ChildComp/MobileComp";
 import {AiOutlineCheck} from 'react-icons/ai'
 import Additional from "./ChildComp/Additional";
 import cn from 'classnames'
+import ModalSelect from "../ModalSelect/ModalSelect";
+import modalSelect from "../ModalSelect/ModalSelect";
 
 const packages = [
     {
@@ -179,6 +181,30 @@ const Packages = () => {
     const [comp, setComp] = React.useState(true);
     const [flag, setFlag] = React.useState(false);
 
+    const [modal, setModal] = useState(false)
+
+    React.useEffect(() => {
+        const handleclick = () => {
+            document.body.style.overflow = modal ? 'hidden' : 'auto';
+        };
+
+        document.addEventListener('click', handleclick);
+
+        return () => {
+            document.removeEventListener('click', handleclick);
+        }
+    }, [modal])
+
+    const visibleModal = () => {
+        setModal(true)
+        console.log('visible', modal)
+    }
+
+    const hiddenModal = () => {
+        setModal(false)
+        console.log('hidden', modal)
+    }
+
     function compensation() {
         setComp(!comp)
         const newArray = [];
@@ -246,7 +272,12 @@ const Packages = () => {
                 {/*мобильные компоненты*/}
                 <div className='pt-5 pb-5 md:hidden block'>
                     {packages.map(item => (
-                        <MobileComp key={item.id + 'mob'} item={item} compensation={comp} priceNow={priceNow}/>
+                        <MobileComp
+                            key={item.id + 'mob'}
+                            item={item}
+                            priceNow={priceNow}
+                            visibleModal={visibleModal}
+                        />
                     ))}
                 </div>
             </div>
@@ -257,7 +288,12 @@ const Packages = () => {
                     <div className={cn('flex md:flex-row pt-10 pb-10')}>
                         {
                             packages.map(item => (
-                                <DesktopComp key={item.id} item={item} priceNow={priceNow}/>
+                                <DesktopComp
+                                    key={item.id}
+                                    item={item}
+                                    priceNow={priceNow}
+                                    visibleModal={visibleModal}
+                                />
                             ))
                         }
                     </div>
@@ -267,6 +303,11 @@ const Packages = () => {
             {/*дополнительная верстка*/}
 
             <Additional/>
+
+            {
+                modal &&
+                <ModalSelect hiddenModal={hiddenModal}/>
+            }
         </div>
     )
 }

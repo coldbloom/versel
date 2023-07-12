@@ -4,7 +4,7 @@ import toStr from './IntToStrFunc'
 import s from '../../AskAndAnswer/AskAndAnswer.module.css'
 import cn from 'classnames'
 
-const MobileComp = ({item, compensation, priceNow}) => {
+const MobileComp = ({item, priceNow, visibleModal}) => {
 
     const content = useRef(null);
     const [flag, setFlag] = useState(false);
@@ -43,7 +43,7 @@ const MobileComp = ({item, compensation, priceNow}) => {
                 ref={content}
                 style={{maxHeight: height}}
             >
-                <UniverseComp item={item}/>
+                <UniverseComp item={item} visibleModal={visibleModal}/>
             </div>
         </div>
     )

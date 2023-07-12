@@ -3,7 +3,7 @@ import {AiOutlineCheckCircle} from 'react-icons/ai'
 import {AiOutlineExclamationCircle} from 'react-icons/ai'
 import toStr from './IntToStrFunc'
 let item = 0;
-const DesktopComp = ({item, priceNow}) => {
+const DesktopComp = ({item, priceNow, visibleModal, hiddenModal}) => {
 
     return(
         <div className='bg-white rounded-lg md:mr-4 last:mr-0 md:px-6 flex flex-col justify-between'>
@@ -56,6 +56,7 @@ const DesktopComp = ({item, priceNow}) => {
             <div>
                 <div className='flex justify-center pb-5 h-max pt-5'>
                     <button
+                        onClick={() => visibleModal()}
                         className='w-10/12 rounded-md border-2 border-blue-900 px-6 py-2 font-bold text-lg text-blue-900'>Оформить
                     </button>
                 </div>

@@ -5,7 +5,7 @@ export default function Document() {
         <Html lang="ru">
             <Head />
             <meta name="description" content="Ритуальная помощь" />
-            <link rel="icon" href="/favicon.ico" />
+            <link rel="icon" href="/wings2.ico" />
             <body>
             <Main />
             <NextScript />

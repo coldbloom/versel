@@ -56,7 +56,7 @@ const Rules = () => {
 
             <div className='md:flex md:justify-center'>
                 <div className='max-w-screen-xl'>
-                    <h2 className='flex justify-center text-xl font-medium mt-6 text-blue-900'>4 причины выбрать нас?</h2>
+                    <h2 className='flex justify-center text-xl font-medium mt-6 text-blue-900 drop-shadow-2xl'>4 причины выбрать нас?</h2>
                     <div className='px-4 md:px-10 md:grid md:grid-cols-4 flex flex-col'>
                         {reasons.map((reason) => <ModuleCompReasons key={reasons.indexOf(reason) *11} value={reason}/>)}
                     </div>
