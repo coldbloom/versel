@@ -31,6 +31,7 @@ const FirstPage = () => {
                     <Image
                         src={mainBg}
                         alt="Собор"
+                        placeholder="blur"
                         className={`mt-5 w-full h-full object-cover`}
                     />
                 </div>
