@@ -4,6 +4,7 @@ import Footer from "../components/Footer/Footer";
 import Link from "next/link";
 import {TiArrowBack} from 'react-icons/ti'
 import Ringing from "../components/Ringing/Ringing";
+import ScrollIndicator from "../components/ScrollIndicator/ScrollIndicator";
 
 const data_one = [
     {
@@ -150,7 +151,7 @@ const data_woman = [
 
 const Chelovek = () => {
     return (
-        <div>
+        <ScrollIndicator>
             <Header />
             <div className='px-4 pb-10'>
                 <div className='flex flex-row items-center'>
@@ -215,7 +216,7 @@ const Chelovek = () => {
             </div>
             <Ringing />
             <Footer/>
-        </div>
+        </ScrollIndicator>
     )
 }
 

@@ -12,10 +12,6 @@ const ScrollIndicator = ({children}) => {
         setScroll(ScrollPercent);
     };
 
-    // if (typeof window !== "undefined") {
-    //     window.addEventListener("scroll", onScroll);
-    // }
-
     useEffect(() => {
         window.addEventListener("scroll", onScroll);
     }, [])

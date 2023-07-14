@@ -5,10 +5,11 @@ import Header from "../components/Header/Header";
 import Ringing from "../components/Ringing/Ringing";
 import RitualSlider from "../components/Slider/RitualSlier";
 import Footer from "../components/Footer/Footer";
+import ScrollIndicator from "../components/ScrollIndicator/ScrollIndicator";
 
 const Uslugi = () => {
     return(
-        <div>
+        <ScrollIndicator>
             <Header />
             <div className='px-4 md:px-10'>
                 <div className='flex flex-row items-center'>
@@ -38,7 +39,7 @@ const Uslugi = () => {
             <Ringing />
             <RitualSlider />
             <Footer />
-        </div>
+        </ScrollIndicator>
     )
 }
 

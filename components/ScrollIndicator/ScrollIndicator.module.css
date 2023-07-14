@@ -1,6 +1,6 @@
 .container {
-    background-color: black;
-    height: 30px;
+    background-color: transparent;
+    height: 4px;
     position: sticky;
     top: 0;
     left: 0;
@@ -9,6 +9,7 @@
 }
 
 .progressBar {
-    height: 30px;
-    background-color: green;
+    z-index: 100;
+    height: 4px;
+    background-color: #199c68;
 }

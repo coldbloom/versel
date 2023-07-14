@@ -1,10 +1,11 @@
 import React from 'react'
 import Header from "../components/Header/Header";
 import Footer from "../components/Footer/Footer";
+import ScrollIndicator from "../components/ScrollIndicator/ScrollIndicator";
 
 const Kontacts = () => {
     return (
-        <div>
+        <ScrollIndicator>
             <Header />
 
             <div className='px-4'>
@@ -12,7 +13,7 @@ const Kontacts = () => {
             </div>
 
             <Footer />
-        </div>
+        </ScrollIndicator>
     )
 }
 
