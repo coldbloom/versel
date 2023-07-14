@@ -9,6 +9,8 @@ import { useEffect, useState } from 'react';
 import PreLoader from "../components/PreLoader/PreLoader";
 import mainBg from './../assets/images/evpatoriya-plyus.jpg'
 
+import ScrollIndicator from "../components/ScrollIndicator/ScrollIndicator";
+
 export default function Home() {
     const router = useRouter()
     const [loading, setLoading] = useState(false)
@@ -37,28 +39,19 @@ export default function Home() {
             <Head>
                 <title>Ритуальная помощь Евпатория</title>
                 <meta name="description" content="Ритуальные услуги, организация похорон в Евпатории, Саках, Уютное"/>
+
+                <meta charSet="utf-8"/>
+                <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
                 <meta property="og:title" content="Заголовок страницы" />
                 <meta property="og:description" content="Описание страницы" />
                 <meta property="og:image" content={mainBg} />
-                <link
-                    rel="preconnect"
-                    href="https://fonts.googleapis.com"
-                    crossOrigin="true"
-                />
-                <link
-                    rel="preconnect"
-                    href="https://fonts.gstatic.com"
-                    crossOrigin="true"
-                />
-                <link
-                    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"
-                    rel="stylesheet"
-                />
+
             </Head>
             {loading ? (
                 <PreLoader />
             ) : (
-                <>
+                <ScrollIndicator>
                     <Header/>
 
                     <main>
@@ -66,7 +59,7 @@ export default function Home() {
                     </main>
 
                     <Footer/>
-                </>
+                </ScrollIndicator>
             )}
         </div>
     )
