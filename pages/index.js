@@ -18,7 +18,6 @@ export default function Home() {
     useEffect(() => {
         const handleRouteChange = (url) => {
             setLoading(true)
-            console.log('Загрузка')
         }
 
         const handleRouteChangeComplete = () => {
@@ -43,8 +42,8 @@ export default function Home() {
                 <meta charSet="utf-8"/>
                 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
-                <meta property="og:title" content="Заголовок страницы" />
-                <meta property="og:description" content="Описание страницы" />
+                <meta property="og:title" content="Ритуальная помощь Евпатория" />
+                <meta property="og:description" content="Ритуальные услуги, организация похорон в Евпатории, Саках, Уютное" />
                 <meta property="og:image" content={mainBg} />
 
             </Head>
