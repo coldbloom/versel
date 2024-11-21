@@ -25,7 +25,7 @@ const ChildComponent = ({data}) => {
                     : cn('flex flex-row items-center py-4 md:px-4 px-1 w-full justify-center', s.button)
                 }
                 onClick={openAnswer}>
-                <h3 className=''>{data.question}</h3>
+                <h3>{data.question}</h3>
                 <div>
                     <FiChevronRight size={22} className={open ? cn(s.rotate, s.transition) : s.transition}/>
                 </div>

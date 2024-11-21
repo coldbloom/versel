@@ -1,4 +1,3 @@
-import React from 'react'
 import {FaOdnoklassniki, FaTelegramPlane, FaViber} from "react-icons/fa";
 import {ImPhone, ImVk} from "react-icons/im";
 import {IoIosMail, IoLogoWhatsapp} from "react-icons/io";

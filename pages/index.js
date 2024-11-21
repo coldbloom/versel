@@ -35,31 +35,63 @@ export default function Home() {
 
     return (
         <div>
-            <Head>
-                <title>Ритуальная помощь Евпатория</title>
-                <meta name="description" content="Ритуальные услуги, организация похорон в Евпатории, Саках, Уютное"/>
+          <Head>
+            <title>Ритуальная помощь Евпатория</title>
+            <meta name="description" content="Ритуальные услуги, организация похорон в Евпатории, Саках, Уютное"/>
+            <meta charSet="utf-8"/>
+            <meta name="viewport" content="width=device-width, initial-scale=1"/>
+            <meta property="og:site_name" content="ритуал.евпатория.рф"/>
+            <meta property="og:url" content="https://xn--80apkrlg.xn--80adio3aejo4j.xn--p1ai/"/>
+            <meta property="og:type" content="website"/>
+            <meta property="og:title" content="Ритуальная помощь Евпатория"/>
+            <meta property="og:description"
+                  content="Ритуальные услуги, организация похорон в Евпатории, Саках, Уютное"/>
+            <meta property="og:image" content={mainBg}/>
+            <meta name="twitter:card" content="summary_large_image"/>
+            <meta name="twitter:title" content="Ритуальная помощь Евпатория"/>
+            <meta name="twitter:description"
+                  content="Ритуальные услуги, организация похорон в Евпатории, Саках, Уютное"/>
+            <meta name="twitter:image" content={mainBg}/>
 
-                <meta charSet="utf-8"/>
-                <meta name="viewport" content="width=device-width, initial-scale=1"/>
+            <!-- Yandex.Metrika counter -->
+            <script
+              dangerouslySetInnerHTML={{
+                __html: `
+                            (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+                            m[i].l=1*new Date();
+                            for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+                            k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+                            (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
 
-                <meta property="og:title" content="Ритуальная помощь Евпатория" />
-                <meta property="og:description" content="Ритуальные услуги, организация похорон в Евпатории, Саках, Уютное" />
-                <meta property="og:image" content={mainBg} />
+                            ym(99003617, "init", {
+                                clickmap:true,
+                                trackLinks:true,
+                                accurateTrackBounce:true,
+                                webvisor:true
+                            });
+                        `,
+              }}
+            />
+            <noscript>
+              <div><img src="https://mc.yandex.ru/watch/99003617" style="position:absolute; left:-9999px;" alt=""/>
+              </div>
+            </noscript>
+            <!-- /Yandex.Metrika counter -->
 
-            </Head>
-            {loading ? (
-                <PreLoader />
-            ) : (
-                <ScrollIndicator>
-                    <Header/>
+          </Head>
+          {loading ? (
+            <PreLoader/>
+          ) : (
+            <ScrollIndicator>
+              <Header/>
 
-                    <main>
-                        <Main/>
-                    </main>
+              <main>
+                <Main/>
+              </main>
 
-                    <Footer/>
-                </ScrollIndicator>
-            )}
+              <Footer/>
+            </ScrollIndicator>
+          )}
         </div>
     )
 }
