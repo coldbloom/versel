@@ -52,6 +52,8 @@ export default function Home() {
             <meta name="twitter:description"
                   content="Ритуальные услуги, организация похорон в Евпатории, Саках, Уютное"/>
             <meta name="twitter:image" content={mainBg}/>
+            {/* Yandex вебмастер */}
+            <meta name="yandex-verification" content="3550ace525a865b3"/>
 
             {/* Yandex.Metrika counter */}
             <script
@@ -74,7 +76,7 @@ export default function Home() {
             />
             <noscript>
               <div>
-                <img src="https://mc.yandex.ru/watch/99003617" style={{ position: 'absolute', left: '-9999px' }} alt="" />
+                <img src="https://mc.yandex.ru/watch/99003617" style={{position: 'absolute', left: '-9999px'}} alt=""/>
               </div>
             </noscript>
             {/* Yandex.Metrika counter */}
